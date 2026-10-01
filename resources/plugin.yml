@@ -1,0 +1,19 @@
+name: BedWars2023-DevAddon
+version: ${project.version}
+main: com.tomkeuper.bedwars.addon.DevAddon
+depend: [ BedWars2023 ]
+authors: [ MrCeasar, TomKeuper ]
+api-version: 1.13
+description: DevAddon for BedWars2023 testing server management and developer utilities.
+
+commands:
+  bwdev:
+    description: BedWars2023 Developer & Testing Server Management Command
+    aliases: [ dev, bedwarsdev ]
+    permission: bw.dev
+    usage: /bwdev help
+
+permissions:
+  bw.dev:
+    description: Allows access to BedWars2023 Developer testing tools
+    default: op
