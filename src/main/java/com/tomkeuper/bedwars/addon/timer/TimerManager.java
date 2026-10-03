@@ -188,6 +188,7 @@ public class TimerManager {
                 }
             }
         } catch (Throwable ignored) {
+            ignored.printStackTrace();
         }
         return false;
     }
